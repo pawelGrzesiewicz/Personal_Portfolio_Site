@@ -1,0 +1,13 @@
+html {
+    margin: 0;
+    padding: 0;
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.name {
+    color: black;
+}

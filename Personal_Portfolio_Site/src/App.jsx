@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import SideBar from "./components/SideBar.jsx";
+import {Outlet} from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+    return (
+        <div className='h-screen min-w-full box-border grid grid-cols-6 grid-rows-6 bg-black p-8'>
+            <header className='col-span-3 select-none text-xl'>
+                <h2 className='text-white font-extralight'>pawel<span className='text-yellow-3 font-bold'>Grzesiewicz</span></h2>
+            </header>
+            <section className='bg-2-rgba col-span-3 flex flex-col items-end'>
+                <p className='text-yellow-3 select-none font-medium font-serif text-xl'>Contact Me</p>
+                <span className='text-white select-all font-light selection:bg-yellow-4 selection:text-yellow-3'>p.grzesiewicz@gmail.com</span>
+            </section>
+            <main className='bg-5-rgba col-span-3 row-span-5'>
+                <Outlet/>
+            </main>
+            <nav className='px-2 col-end-7 row-start-2 row-end-7'>
+                <SideBar/>
+            </nav>
+        </div>
+    );
 }
-
-export default App

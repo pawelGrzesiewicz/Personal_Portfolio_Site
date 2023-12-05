@@ -5,7 +5,7 @@ export default function About({active}) {
     const isActive = active || false;
 
     return (
-        <section
+        <sectiongit
             id="about"
             className={`h-full w-full flex flex-col justify-end lg:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
         >
@@ -15,7 +15,7 @@ export default function About({active}) {
                     <a
                         href="/path/to/your/cv.pdf"  // Replace with the actual path to your CV file
                         className='font-serif flex items-end select-all font-light text-yellow-3 hover:text-yellow-1 text-2xl sm:text-3xl lg:text-4xl ml-2 sm:ml-3 lg:ml-4'>
-                        download="your_cv_file_name.pdf"  // Set the desired name for the downloaded file
+                        {/*download="your_cv_file_name.pdf"  // Set the desired name for the downloaded file*/}
                         Download CV
                     </a>
                 </div>
@@ -27,7 +27,7 @@ export default function About({active}) {
                     nemo quia voluptates. Ab accusamus ad aperiam atque aut autem consequatur consequuntur dicta
                     doloremque doloribus earum eos harum illum itaque maiores
                 </p>
-        </section>
+        </sectiongit>
     )
 }
 

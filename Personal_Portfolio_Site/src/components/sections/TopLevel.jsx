@@ -15,10 +15,10 @@ export default function TopLevel({active}) {
         >
             <nav className='flex text-white items-center mb-4 '>
                 <a href="https://www.linkedin.com/in/paweł-grzesiewicz-11101a96" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className='text-4xl sm:text-5xl lg:text-6xl mr-6'/>
+                    <FaLinkedin className='text-4xl sm:text-5xl lg:text-6xl mr-6 hover:text-yellow-1'/>
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <FaSquareGithub className='text-4xl sm:text-5xl lg:text-6xl'/>
+                <a href="https://github.com/pawelGrzesiewicz" target="_blank" rel="noopener noreferrer">
+                    <FaSquareGithub className='text-4xl sm:text-5xl lg:text-6xl hover:text-yellow-1'/>
                 </a>
             </nav>
             <h1 className='text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-normal sm:leading-normal lg:leading-relaxed'>I

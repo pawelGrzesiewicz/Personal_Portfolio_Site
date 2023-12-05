@@ -12,10 +12,12 @@ export default function About({active}) {
                 <h1 className='text-white font-extrabold text-4xl sm:text-5xl lg:text-7xl'>About Me</h1>
                 <div className='flex'>
                     <div className='w-6 h-2 sm:w-8 sm:h-2.5 lg:w-12 lg:h-3.5 bg-white ml-0.5  mt-6 sm:mt-8 lg:mt-12 mb-2'></div>
-                    <span
+                    <a
+                        href="/path/to/your/cv.pdf"  // Replace with the actual path to your CV file
                         className='font-serif flex items-end select-all font-light text-yellow-3 hover:text-yellow-1 text-2xl sm:text-3xl lg:text-4xl ml-2 sm:ml-3 lg:ml-4'>
+                        download="your_cv_file_name.pdf"  // Set the desired name for the downloaded file
                         Download CV
-                    </span>
+                    </a>
                 </div>
                 <p
                     className='text-white mt-6 sm:mt-10 md:mt-12 lg:text-xl font-extralight'

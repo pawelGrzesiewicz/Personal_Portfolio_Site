@@ -5,7 +5,7 @@ export default function About({active}) {
     const isActive = active || false;
 
     return (
-        <sectiongit
+        <section
             id="about"
             className={`h-full w-full flex flex-col justify-end lg:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
         >
@@ -27,7 +27,7 @@ export default function About({active}) {
                     nemo quia voluptates. Ab accusamus ad aperiam atque aut autem consequatur consequuntur dicta
                     doloremque doloribus earum eos harum illum itaque maiores
                 </p>
-        </sectiongit>
+        </section>
     )
 }
 

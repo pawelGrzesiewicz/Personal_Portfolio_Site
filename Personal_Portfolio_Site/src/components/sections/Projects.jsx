@@ -9,7 +9,6 @@ export default function Projects({active}) {
         <section
             id="projects"
             className={`h-full w-full flex flex-col justify-end lg:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
-            style={{ minHeight: '100vh' }}
         >
             <h1 className='text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-normal sm:leading-normal lg:leading-relaxed'>Latest
                 projects</h1>
@@ -21,12 +20,12 @@ export default function Projects({active}) {
                         View more works
                     </span>
             </div>
-            {/*<div className='grid grid-cols-2 grid-rows-2 gap-10 mt-10 mb-10'>*/}
-            {/*    <div className='h-24 bg-yellow-3'></div>*/}
-            {/*    <div className='bg-yellow-3'></div>*/}
-            {/*    <div className='bg-yellow-3'></div>*/}
-            {/*    <div className='bg-yellow-3'></div>*/}
-            {/*</div>*/}
+            <div className='grid grid-cols-2 grid-rows-2 gap-10 mt-10 mb-10'>
+                <div className='h-24 bg-yellow-3'></div>
+                <div className='bg-yellow-3'></div>
+                <div className='bg-yellow-3'></div>
+                <div className='bg-yellow-3'></div>
+            </div>
         </section>
     )
 }

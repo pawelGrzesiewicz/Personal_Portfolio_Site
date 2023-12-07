@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Pontano Sans'],
+    },
     colors: {
       'yellow-1': '#F2CF1D',
       'yellow-2': '#F2BD1D',

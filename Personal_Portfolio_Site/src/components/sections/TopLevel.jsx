@@ -13,7 +13,7 @@ export default function TopLevel({active}) {
             id="top-level"
             className={`h-full w-full flex flex-col justify-end lg:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
         >
-            <nav className='flex text-white items-center mb-4 '>
+            <nav className='flex text-yellow-3 items-center mb-4 '>
                 <a href="https://www.linkedin.com/in/paweł-grzesiewicz-11101a96" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className='text-4xl sm:text-5xl lg:text-6xl mr-6 hover:text-yellow-1'/>
                 </a>

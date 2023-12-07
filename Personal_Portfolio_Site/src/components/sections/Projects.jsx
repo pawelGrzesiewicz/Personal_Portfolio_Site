@@ -21,10 +21,10 @@ export default function Projects({active}) {
                     </span>
             </div>
             <div className='grid grid-cols-2 grid-rows-2 gap-10 mt-10 mb-10'>
-                <div className='h-52 bg-yellow-3'></div>
-                <div className='bg-yellow-3'></div>
-                <div className='bg-yellow-3'></div>
-                <div className='bg-yellow-3'></div>
+                <div className='sm:h-52 bg-yellow-3 rounded'></div>
+                <div className='lg:h-52 bg-yellow-3 rounded'></div>
+                <div className='lg:h-52 bg-yellow-3 rounded'></div>
+                <div className='lg:h-52 bg-yellow-3 rounded'></div>
             </div>
         </section>
     )

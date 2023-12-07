@@ -3,8 +3,10 @@ import TopLevel from "../components/sections/TopLevel.jsx";
 import About from "../components/sections/About.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Contact from "../components/sections/Contact.jsx";
-import {sectionIds} from "../components/sections/sectionIds.jsx";
+import {sectionIds} from "../components/navBar/sectionIds.jsx";
 import {Link} from "react-router-dom";
+import NavBar from "../components/navBar/NavBar.jsx";
+import HamburgerBar from "../components/navBar/HamburgerBar.jsx";
 
 export default function Home() {
     const [activeLink, setActiveLink] = useState("top-level");
@@ -52,12 +54,18 @@ export default function Home() {
                         className='text-yellow-3 font-bold'>Grzesiewicz</span></h2>
                 </header>
 
-                <section className='hidden bg-2-rgba col-span-3 sm:flex flex-col items-end'>
+                <nav className='md:hidden grid col-span-2 row-span-3 row-start-1 justify-end'>
+                    <HamburgerBar
+                        handleClick={handleClick}
+                        activeLink={activeLink}/>
+                </nav>
+
+                <section className='hidden bg-2-rgba col-span-3 md:flex flex-col items-end'>
                     <p className='text-yellow-3 select-none font-medium font-serif text-xl'>Contact Me</p>
                     <span
                         className='text-white select-all font-light text-sm selection:bg-yellow-4 selection:text-yellow-3'>
-                    p.grzesiewicz@gmail.com
-                </span>
+                        p.grzesiewicz@gmail.com
+                    </span>
                 </section>
 
                 <main onWheel={handleScroll}
@@ -68,35 +76,13 @@ export default function Home() {
                     <Contact active={activeLink === 'contact'}/>
                 </main>
 
-                <nav className='hidden md:grid px-2 col-end-7 row-start-2 row-end-7'>
-                    <nav className='flex flex-col justify-center items-end h-full'>
-                        <div>
-                            <ul>
-                                {
-                                    sectionIds.map((sectionId, i) => (
-                                        <li key={i}
-                                            onClick={() => handleClick(sectionId)}
-                                            className='flex justify-end'
-                                        >
-                                            <Link
-                                                to={`/${sectionId}`}
-                                                className={`hover:text-yellow-1 flex  text-yellow-3 gap-5 relative rounded-sm ${activeLink === sectionId ? 'active' : ''}`}
-                                            >
-                                                {sectionId}
-                                                <div className='flex flex-col items-center'>
-                                                    <div
-                                                        className={`h-2 w-2 mb-2.5  mt-2.5 outline outline-2 outline-yellow-3 outline-offset-2 rotate-45 ${activeLink === sectionId ? 'bg-yellow-1' : ''}`}></div>
-                                                    {sectionId !== sectionIds[sectionIds.length - 1] && (
-                                                        <div className="h-6 w-0.5 bg-yellow-3 top-8 rotate"></div>
-                                                    )}
-                                                </div>
-                                            </Link>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </nav>
+                <nav className='grid px-2 col-end-7 row-start-2 row-end-7'>
+                    <div className='hidden md:flex flex-col justify-center items-end h-full'>
+                        <NavBar
+                            handleClick={handleClick}
+                            activeLink={activeLink}
+                        />
+                    </div>
                 </nav>
             </div>
         </div>

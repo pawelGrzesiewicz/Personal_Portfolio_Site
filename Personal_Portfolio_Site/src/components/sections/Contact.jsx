@@ -20,9 +20,8 @@ export default function Contact( {active} ) {
                     Write an E-mail
                 </Link>
             </div>
-            <p className='text-white mt-6 sm:mt-10 md:mt-12 lg:text-xl font-extralight'>I love to make new contacts with
-                new people.
-                <br></br>Fill free and drop me an email.</p>
+            <p className='text-white mt-6 sm:mt-10 md:mt-12 lg:text-xl font-extralight'>I love making new connections with people.
+                <br></br>Feel free to drop me an email.</p>
         </section>
     )
 }

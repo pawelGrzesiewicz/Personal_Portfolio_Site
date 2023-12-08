@@ -1,5 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FaReact } from "react-icons/fa";
+import { SiReactrouter } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
+import { TbBrandCss3 } from "react-icons/tb";
+
+
+
 
 
 export default function Projects({active}) {
@@ -21,10 +28,67 @@ export default function Projects({active}) {
                     </span>
             </div>
             <div className='grid grid-cols-2 grid-rows-2 gap-10 mt-10 mb-10'>
-                <div className='sm:h-52 bg-yellow-3 rounded'></div>
-                <div className='lg:h-52 bg-yellow-3 rounded'></div>
-                <div className='lg:h-52 bg-yellow-3 rounded'></div>
-                <div className='lg:h-52 bg-yellow-3 rounded'></div>
+                <a href="https://placeforfamily.netlify.app"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className='sm:h-52 border border-yellow-2 hover:border-yellow-1 rounded flex justify-between items-center p-4'>
+                    <div>
+                        <img
+                            src="/place_for_family.png"
+                            alt="place_for_family"
+                            className='w-65 text-white'
+                        />
+                    </div>
+                    <div className='text-white m-3'>
+                        <FaReact className='w-8 h-8 m-2'/>
+                        <SiReactrouter className='w-8 h-8 m-2'/>
+                        <FaSass className='w-8 h-8 m-2'/>
+                    </div>
+                </a>
+                <a href="https://to-dos-mvc.netlify.app/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className='sm:h-52 border border-yellow-2 hover:border-yellow-1 rounded flex justify-between items-center p-4'>
+                    <div>
+                        <img
+                            src="/todo.png"
+                            alt="to_do"
+                            className='w-60 text-white'
+                        />
+                    </div>
+                    <div className='text-white'>
+                        <FaReact className='w-8 h-8 m-2'/>
+                        <SiReactrouter className='w-8 h-8 m-2'/>
+                        <TbBrandCss3 className='w-8 h-8 m-2'/>
+
+                    </div>
+                </a>
+                <a href="#"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className='sm:h-52 border border-yellow-2 hover:border-yellow-1 rounded flex justify-between items-center p-4'>
+                    <div>
+                        <img
+                            src=""
+                            alt="#"
+                            className='w-60 text-white'
+                        />
+                    </div>
+                    <div className='text-white'></div>
+                </a>
+                <a href="#"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className='sm:h-52 border border-yellow-2 hover:border-yellow-1 rounded flex justify-between items-center p-4'>
+                    <div>
+                        <img
+                            src=""
+                            alt="#"
+                            className='w-60 text-white'
+                        />
+                    </div>
+                    <div className='text-white'></div>
+                </a>
             </div>
         </section>
     )

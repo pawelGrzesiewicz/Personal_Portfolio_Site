@@ -10,7 +10,7 @@ export default function HamburgerBar ({handleClick, activeLink}) {
     }
 
     return (
-        <div className='flex flex-col justify-between items-end'>
+        <div className='flex flex-col justify-between items-end p-2'>
             <div
                 className={`flex flex-col justify-between items-center cursor-pointer w-6 h-4 ${
                     isOpen ? "open" : ""

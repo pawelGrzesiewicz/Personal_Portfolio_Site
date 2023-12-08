@@ -1,10 +1,9 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import TopLevel from "../components/sections/TopLevel.jsx";
 import About from "../components/sections/About.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Contact from "../components/sections/Contact.jsx";
 import {sectionIds} from "../components/navBar/sectionIds.jsx";
-import {Link} from "react-router-dom";
 import NavBar from "../components/navBar/NavBar.jsx";
 import HamburgerBar from "../components/navBar/HamburgerBar.jsx";
 
@@ -46,8 +45,8 @@ export default function Home() {
     }, [currentViewIndex]);
 
     return (
-        <div className='bg-black '>
-            <div style={{backgroundImage: 'url(./src/assets/bg.jpg)', height: '100vh'}}
+        <div className='bg-bg-black '>
+            <div style={{backgroundImage: 'url(/bg.jpg)', height: '100vh', backgroundPosition: 'center', backgroundSize: 'cover', }}
                  className=' box-border grid grid-cols-6 grid-rows-6 p-4 sm:p-6 lg:p-8 max-w-screen-2xl m-auto'>
                 <header className='col-span-3 select-none sm:text-xl'>
                     <h2 className='text-white font-extralight'>pawel<span

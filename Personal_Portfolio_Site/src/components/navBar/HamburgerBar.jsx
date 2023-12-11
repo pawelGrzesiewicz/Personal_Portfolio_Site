@@ -7,7 +7,8 @@ export default function HamburgerBar ({handleClick, activeLink}) {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-    }
+    };
+
 
     return (
         <div className='flex flex-col items-end p-2'>

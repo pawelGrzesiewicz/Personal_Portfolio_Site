@@ -14,7 +14,7 @@ export default function NavBar({handleClick, activeLink}) {
                         >
                             <Link
                                 to={`/${sectionId}`}
-                                className={`hover:text-yellow-1 flex  text-yellow-3 gap-5 relative rounded-sm ${activeLink === sectionId ? 'active' : ''}`}
+                                className={`hover:text-yellow-1 flex text-yellow-3 gap-5 relative rounded-sm ${activeLink === sectionId ? 'active' : ''}`}
                             >
                                 {sectionId}
                                 <div className='flex flex-col items-center'>

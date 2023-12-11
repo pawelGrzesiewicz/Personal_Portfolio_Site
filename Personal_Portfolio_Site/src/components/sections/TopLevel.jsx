@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
@@ -13,15 +12,14 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiNetlify } from "react-icons/si";
 
 
-export default function TopLevel({active}) {
-    const isActive = active || false;
+export default function TopLevel() {
 
     return (
         <section
             id="top-level"
-            className={`h-full w-full flex flex-col justify-end md:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
+            className= 'h-full w-full flex flex-col justify-end md:justify-center'
         >
-            <nav className='flex text-yellow-3 items-center mb-4 '>
+            <nav className='flex text-yellow-3 items-center mb-6'>
                 <a href="https://www.linkedin.com/in/paweł-grzesiewicz-11101a96" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className='text-4xl sm:text-5xl lg:text-6xl mr-6 hover:text-yellow-1'/>
                 </a>
@@ -29,24 +27,20 @@ export default function TopLevel({active}) {
                     <FaSquareGithub className='text-4xl sm:text-5xl lg:text-6xl hover:text-yellow-1'/>
                 </a>
             </nav>
-            <h1 className='text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-normal sm:leading-normal lg:leading-relaxed'>I
+            <h1 className='text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>I
                 am FRONT-END <br></br>Developer</h1>
-            <div className='w-6 h-2 sm:w-8 sm:h-2.5 lg:w-12 lg:h-3.5 bg-white ml-0.5  mt-5 sm:mt-7 lg:mt-8 mb-2'></div>
-            <div className='flex text-white mt-8'>
-                <AiOutlineHtml5 className='w-8 h-8 m-2'/>
-                <TbBrandCss3 className='w-8 h-8 m-2'/>
-                <FaSass className='w-8 h-8 m-2'/>
-                <SiTailwindcss className='w-8 h-8 m-2'/>
-                <IoLogoJavascript className='w-8 h-8 m-2'/>
-                <FaReact className='w-8 h-8 m-2'/>
-                <SiReactrouter className='w-8 h-8 m-2'/>
-                <RiSupabaseFill className='w-8 h-8 m-2'/>
-                <SiNetlify className='w-8 h-8 m-2'/>
+            <div className='bg-white w-6 h-1.5 md:w-8 md:h-2 xl:w-12 xl:h-3 ml-0.5 xl:ml-2 mt-4 md:mt-6 xl:mt-10 mb-2'></div>
+            <div className='flex text-white mt-14'>
+                <AiOutlineHtml5 className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <TbBrandCss3 className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <FaSass className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <SiTailwindcss className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <IoLogoJavascript className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <FaReact className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <SiReactrouter className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <RiSupabaseFill className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
+                <SiNetlify className='w-8 h-8 mr-4 lg:mr-8 lg:w-12 lg:h-12'/>
             </div>
         </section>
     )
-}
-
-TopLevel.propTypes = {
-    active: PropTypes.bool,
 }

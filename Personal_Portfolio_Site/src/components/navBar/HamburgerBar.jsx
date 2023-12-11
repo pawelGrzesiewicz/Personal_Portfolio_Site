@@ -10,9 +10,9 @@ export default function HamburgerBar ({handleClick, activeLink}) {
     }
 
     return (
-        <div className='flex flex-col justify-between items-end p-2'>
+        <div className='flex flex-col items-end p-2'>
             <div
-                className={`flex flex-col justify-between items-center cursor-pointer w-6 h-4 ${
+                className={`flex flex-col justify-between items-center cursor-pointer w-6 h-4 mb-12 ${
                     isOpen ? "open" : ""
                 }`}
                 onClick={toggleMenu}
@@ -25,7 +25,7 @@ export default function HamburgerBar ({handleClick, activeLink}) {
             </div>
 
             {isOpen === true &&
-                <div className='flex justify-end'>
+                <div className='flex p-1'>
                     <NavBar
                         handleClick={handleClick}
                         activeLink={activeLink}

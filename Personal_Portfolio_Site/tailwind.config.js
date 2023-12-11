@@ -17,7 +17,11 @@ export default {
       'white': '#fff',
       'bg-black': '#030303'
     },
-    extend: {},
+    extend: {backgroundImage: {
+        'desktop': "url('/bg.jpg')",
+        'mobile': "url('/bg-mobile.jpg')",
+      }
+    },
 
   },
   plugins: [],

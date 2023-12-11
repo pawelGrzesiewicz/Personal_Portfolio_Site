@@ -9,7 +9,7 @@ export default function Contact( {active} ) {
     return (
         <section
             id="contact"
-            className={`h-full w-full flex flex-col justify-end lg:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
+            className={`h-full w-full flex flex-col justify-end md:justify-center transition-opacity ${isActive ? 'block opacity-100' : 'hidden opacity-0'}`}
         >
             <h1 className='text-white font-extrabold text-4xl sm:text-5xl lg:text-7xl'>Say hello!</h1>
             <div className='flex'>

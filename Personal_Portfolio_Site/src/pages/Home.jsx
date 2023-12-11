@@ -46,14 +46,13 @@ export default function Home() {
 
     return (
         <div className='bg-bg-black '>
-            <div style={{backgroundImage: 'url(/bg.jpg)', height: '100vh', backgroundPosition: 'center', backgroundSize: 'cover', }}
-                 className=' box-border grid grid-cols-6 grid-rows-6 p-4 sm:p-6 lg:p-8 max-w-screen-2xl m-auto'>
+            <div className='bg-mobile md:bg-desktop bg-cover bg-center h-screen box-border grid grid-cols-6 grid-rows-6 p-4 sm:p-6 lg:p-8 max-w-screen-2xl m-auto'>
                 <header className='col-span-3 select-none sm:text-xl'>
                     <h2 className='text-white font-extralight'>pawel<span
                         className='text-yellow-3 font-bold'>Grzesiewicz</span></h2>
                 </header>
 
-                <nav className='md:hidden grid col-span-2 row-span-3 row-start-1 justify-end'>
+                <nav className='md:hidden grid col-span-2 row-span-0 col-start-5 col-end-7 row-start-1 row-end-3 justify-end'>
                     <HamburgerBar
                         handleClick={handleClick}
                         activeLink={activeLink}/>

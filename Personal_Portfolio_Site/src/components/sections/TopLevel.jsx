@@ -21,13 +21,13 @@ export default function TopLevel() {
         >
             <nav className='flex text-yellow-3 items-center mb-6'>
                 <a href="https://www.linkedin.com/in/paweł-grzesiewicz-11101a96" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className='text-4xl sm:text-5xl lg:text-6xl mr-6 hover:text-yellow-1'/>
+                    <FaLinkedin className='text-4xl sm:text-5xl lg:text-6xl mr-10 hover:text-yellow-1'/>
                 </a>
                 <a href="https://github.com/pawelGrzesiewicz" target="_blank" rel="noopener noreferrer">
                     <FaSquareGithub className='text-4xl sm:text-5xl lg:text-6xl hover:text-yellow-1'/>
                 </a>
             </nav>
-            <h1 className='text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>I
+            <h1 className='select-none text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>I
                 am FRONT-END <br></br>Developer</h1>
             <div className='bg-white w-6 h-1.5 md:w-8 md:h-2 xl:w-12 xl:h-3 ml-0.5 xl:ml-2 mt-4 md:mt-6 xl:mt-10 mb-2'></div>
             <div className='flex text-white mt-14'>

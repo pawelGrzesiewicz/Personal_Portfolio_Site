@@ -39,7 +39,7 @@ export default function Home() {
                     </span>
                 </section>
 
-                <main className='row-start-2 col-span-6 md:col-span-4 col-start-1 row-span-5'>
+                <main className='col-span-6 md:col-span-4 col-start-1 row-span-5 row-start-2'>
                     {activeLink === 'top-level' && <TopLevel/>}
                     {activeLink === 'about' && <About/>}
                     {activeLink === 'projects' && <Projects/>}

@@ -1,23 +1,50 @@
-import React from "react";
-import {FaReact} from "react-icons/fa";
-import {SiReactrouter} from "react-icons/si";
-import {FaSass} from "react-icons/fa";
-import {RiSupabaseFill} from "react-icons/ri";
+import React, {useEffect, useState} from "react";
 import {projectIds} from "./projectIds.jsx";
 import 'swiper/swiper-bundle.css';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {EffectCoverflow, Pagination} from "swiper/modules";
+import {FaSquareGithub} from "react-icons/fa6";
+import {AiOutlineGlobal} from "react-icons/ai";
 
 
 export default function Projects() {
-    // const [displayLink, setDisplayLink] = useState([projectIds[0]]);
+    const [screen, setScreen] = useState(null);
+    const [swiperInstance, setSwiperInstance] = useState(null);
+
+
+    useEffect(() => {
+        const updateScreen = () => {
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth < 768) {
+                setScreen(1);
+            } else if (screenWidth >= 768) {
+                setScreen(2);
+            }
+        };
+
+        updateScreen();
+
+        window.addEventListener("resize", updateScreen);
+
+        return () => {
+            window.removeEventListener("resize", updateScreen);
+        };
+    }, [screen]);
+
+    const slideNext = () => {
+        if (swiperInstance) {
+            swiperInstance.slideNext();
+        }
+    };
+
 
     return (
         <section
             id="projects"
             className='h-full w-full flex flex-col justify-end md:justify-center'
         >
-            <h1 className='text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>Latest
+            <h1 className='select-none text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>Latest
                 projects</h1>
             <div className='flex'>
                 <div
@@ -26,7 +53,9 @@ export default function Projects() {
                 </div>
 
                 <span
-                    className='flex items-end select-all font-light text-yellow-3 hover:text-yellow-1 text-2xl md:text-4xl xl:text-5xl ml-2 md:ml-4 xl:ml-6'>
+                    className="cursor-pointer select-none flex items-end font-light text-yellow-3 hover:text-yellow-1 text-2xl md:text-4xl xl:text-5xl ml-2 md:ml-4 xl:ml-6"
+                    onClick={slideNext}
+                >
                     View more works
                 </span>
 
@@ -37,7 +66,7 @@ export default function Projects() {
                     effect={'coverflow'}
                     grabCursor={false}
                     centeredSlides={true}
-                    slidesPerView={'auto'}
+                    slidesPerView={screen}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
@@ -47,43 +76,56 @@ export default function Projects() {
                     }}
                     pagination={false}
                     modules={[EffectCoverflow, Pagination]}
+                    loop={true}
                     className="mySwiper"
+                    onSwiper={(swiper) => setSwiperInstance(swiper)}
                 >
                     {projectIds.map((project) => (
                         <SwiperSlide key={project.id} className="swiper-slide">
-                            <h2>{project.name}</h2>
-                            <div className="mt-6 relative w-full h-full border border-yellow-3 hover:border-yellow-1 rounded p-2">
-                                <div className='flex'>
-                                    <div className="absolute -top-5 left-4">
-                                        <p className="z-10 top-2 text-yellow-3 relative mx-1">
-                                            {project}
+                            <div
+                                className="mt-12 mb-2 relative w-full border border-yellow-3 rounded">
+                                <span className="w-full flex justify-between items-center absolute -top-4 mx-auto px-4">
+                                    <div className='relative flex items-center justify-start'>
+                                        <p className=' z-10 mx-1 -full text-yellow-3'>
+                                            {project.name}
                                         </p>
                                         <span
-                                            className="z-0 line-through h-0.5 w-full bg-bg-black block absolute bottom-1 left-0"></span>
+                                            className="absolute z-0 h-px w-full bg-bg-black">
+                                        </span>
                                     </div>
-                                    <div>
-                                        <img
-                                            src="/place_for_family.png"
-                                            alt="place_for_family"
-                                            className="w-full"
-                                        />
+
+                                    <div className='relative flex items-center justify-start'>
+                                        <div
+                                            className="z-10 flex cursor-pointer text-yellow-3 mx-1">
+                                            <a href={project.ghLink} target="_blank" rel="noopener noreferrer">
+                                                <FaSquareGithub className='text-3xl hover:text-yellow-1'/>
+                                            </a>
+                                            <a href={project.webLink} target="_blank" rel="noopener noreferrer">
+                                                <AiOutlineGlobal className='text-3xl ml-3 hover:text-yellow-1'/>
+                                            </a>
+                                        </div>
+                                        <span
+                                                className="absolute z-0 h-px w-full bg-bg-black opacity-30 md:opacity-100">
+                                        </span>
                                     </div>
-                                    <div className="text-white m-3">
-                                        <FaReact className="w-8 h-8 m-2"/>
-                                        <SiReactrouter className="w-8 h-8 m-2"/>
-                                        <FaSass className="w-8 h-8 m-2"/>
-                                        <RiSupabaseFill className="w-8 h-8 m-2"/>
-                                    </div>
+                                </span>
+
+                                <img
+                                    src={project.img}
+                                    alt={project.name}
+                                    className="w-full"
+                                />
+
+                                <div className="flex text-white">
+                                    {project.tools.map((tool, index) => (
+                                        <span key={index} className="items-center m-2">
+                                            {tool}
+                                            </span>
+                                    ))}
                                 </div>
-                                <p
-                                    className='text-white m-3'>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam dolor
-                                    expedita inventore laboriosam odio perspiciatis rerum tempore temporibus
-                                    <a
-                                        href="https://placeforfamily.netlify.app"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >bla bla bla </a>
+
+                                <p className='text-white text-justify text-xs m-3'>
+                                    {project.description}
                                 </p>
                             </div>
                         </SwiperSlide>

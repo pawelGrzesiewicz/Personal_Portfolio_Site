@@ -10,7 +10,7 @@ export default function About() {
                 <div className='flex'>
                     <div className='bg-white w-6 h-1.5 md:w-8 md:h-2 xl:w-12 xl:h-3 ml-0.5 xl:ml-2 mt-4 md:mt-6 xl:mt-10 mb-2'></div>
                     <a
-                        href="https://drive.google.com/file/d/1MvcRlVkgXm9tY4TMbR0u3mCJL-MU_fA8/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1MvcRlVkgXm9tY4TMbR0u3mCJL-MU_fA8/view?usp=drive_link"
                         target="_blank"
                         rel="noreferrer"
                         className='select-none font-serif flex items-end font-light text-yellow-3 hover:text-yellow-1 text-2xl md:text-4xl xl:text-5xl ml-2 md:ml-4 xl:ml-6'>

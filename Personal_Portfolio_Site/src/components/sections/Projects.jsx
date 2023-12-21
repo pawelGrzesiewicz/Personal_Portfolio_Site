@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {projectIds} from "./projectIds.jsx";
 import 'swiper/swiper-bundle.css';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -105,7 +105,7 @@ export default function Projects() {
                                             </a>
                                         </div>
                                         <span
-                                                className="absolute z-0 h-px w-full bg-bg-black opacity-30 md:opacity-100">
+                                                className="absolute z-0 h-px w-full bg-bg-black opacity-50 md:opacity-100">
                                         </span>
                                     </div>
                                 </span>
@@ -118,13 +118,13 @@ export default function Projects() {
 
                                 <div className="flex text-white">
                                     {project.tools.map((tool, index) => (
-                                        <span key={index} className="items-center m-2">
+                                        <span key={index} className="items-center mx-2">
                                             {tool}
                                             </span>
                                     ))}
                                 </div>
 
-                                <p className='text-white text-justify text-xs m-3'>
+                                <p className='text-white text-xs m-3'>
                                     {project.description}
                                 </p>
                             </div>

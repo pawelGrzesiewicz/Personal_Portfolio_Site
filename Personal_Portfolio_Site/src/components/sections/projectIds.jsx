@@ -4,6 +4,8 @@ import {RiSupabaseFill} from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiNetlify } from "react-icons/si";
 import { TbBrandCss3 } from "react-icons/tb";
+import { TbApi } from "react-icons/tb";
+
 
 export const projectIds = [
     {
@@ -16,18 +18,15 @@ export const projectIds = [
             <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
             <FaReact key="react" className="w-6 h-6 m-2"/>,
             <FaSass key="sass" className="w-6 h-6 m-2"/>,
+            <TbApi key="netlify" className="w-6 h-6 m-2"/>,
             <RiSupabaseFill key="supabase" className="w-6 h-6 m-2"/>,
-            <SiNetlify key="netlify" className="w-6 h-6 m-2"/>
+            <SiNetlify key="netlify" className="w-6 h-6 m-2"/>,
         ],
-        description: 'The project is a React-based to-do list application that allows users to efficiently manage their tasks. ' +
-            'With features like adding new tasks, toggling between "in progress" and "done" statuses, and filtering tasks based on their status, ' +
-            'the application provides a user-friendly interface for organizing to-do items. The use of local storage ensures persistent data storage, ' +
-            'and the clean component structure, adhering to React best practices, enhances maintainability. Additionally, ' +
-            'the application offers a visually appealing design with SCSS styling and utilizes PropTypes for robust type-checking throughout the codebase.',
+        description: `The Entertainment Finder is a dynamic web application built with React, offering users a personalized and interactive experience based on their family's preferences and local weather conditions. The application provides a seamless navigation experience using React Router, allowing users to explore different views such as Home, Sign Up, Sign In, Search Engine, and Add Option. The core functionality revolves around dynamically fetching and displaying entertainment options categorized into "Active," "Learn," and "Chill.`
     },
     {
         id: 2,
-        name: 'Todo',
+        name: 'To Do',
         img: '/todo.png',
         ghLink: 'https://github.com/pawelGrzesiewicz/todo_mvc',
         webLink: 'https://to-dos-mvc.netlify.app',
@@ -45,18 +44,14 @@ export const projectIds = [
     },
     {
         id: 3,
-        name: '#',
+        name: 'Best Shop',
         img: '#',
         ghLink: '#',
         webLink: '#',
         tools: [
             <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
         ],
-        description: 'The project is a React-based to-do list application that allows users to efficiently manage their tasks. ' +
-            'With features like adding new tasks, toggling between "in progress" and "done" statuses, and filtering tasks based on their status, ' +
-            'the application provides a user-friendly interface for organizing to-do items. The use of local storage ensures persistent data storage, ' +
-            'and the clean component structure, adhering to React best practices, enhances maintainability. Additionally, ' +
-            'the application offers a visually appealing design with SCSS styling and utilizes PropTypes for robust type-checking throughout the codebase.',
+        description: '',
     },
     {
         id: 4,
@@ -67,10 +62,6 @@ export const projectIds = [
         tools: [
             <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
         ],
-        description: 'The project is a React-based to-do list application that allows users to efficiently manage their tasks. ' +
-            'With features like adding new tasks, toggling between "in progress" and "done" statuses, and filtering tasks based on their status, ' +
-            'the application provides a user-friendly interface for organizing to-do items. The use of local storage ensures persistent data storage, ' +
-            'and the clean component structure, adhering to React best practices, enhances maintainability. Additionally, ' +
-            'the application offers a visually appealing design with SCSS styling and utilizes PropTypes for robust type-checking throughout the codebase.',
+        description: ''
     },
 ];

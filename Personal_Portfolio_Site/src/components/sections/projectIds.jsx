@@ -18,7 +18,7 @@ export const projectIds = [
             <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
             <FaReact key="react" className="w-6 h-6 m-2"/>,
             <FaSass key="sass" className="w-6 h-6 m-2"/>,
-            <TbApi key="netlify" className="w-6 h-6 m-2"/>,
+            <TbApi key="api" className="w-6 h-6 m-2"/>,
             <RiSupabaseFill key="supabase" className="w-6 h-6 m-2"/>,
             <SiNetlify key="netlify" className="w-6 h-6 m-2"/>,
         ],
@@ -45,23 +45,14 @@ export const projectIds = [
     {
         id: 3,
         name: 'Best Shop',
-        img: '#',
-        ghLink: '#',
-        webLink: '#',
+        img: '/b-s.png',
+        ghLink: 'https://github.com/pawelGrzesiewicz/Best_Shop_RWD',
+        webLink: 'https://best-shop-rwd.netlify.app/',
         tools: [
             <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
+            <FaSass key="sass" className="w-6 h-6 m-2"/>,
+            <SiNetlify key="netlify" className="w-6 h-6 m-2"/>
         ],
         description: '',
-    },
-    {
-        id: 4,
-        name: '#',
-        img: '#',
-        ghLink: '#',
-        webLink: '#',
-        tools: [
-            <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
-        ],
-        description: ''
     },
 ];

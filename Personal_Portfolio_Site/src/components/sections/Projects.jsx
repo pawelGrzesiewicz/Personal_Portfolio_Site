@@ -90,7 +90,7 @@ export default function Projects() {
                                             {project.name}
                                         </p>
                                         <span
-                                            className="absolute z-0 h-px w-full bg-bg-black">
+                                            className="absolute z-0 h-1 w-full bg-bg-black">
                                         </span>
                                     </div>
 
@@ -105,7 +105,7 @@ export default function Projects() {
                                             </a>
                                         </div>
                                         <span
-                                                className="absolute z-0 h-px w-full bg-bg-black opacity-50 md:opacity-100">
+                                                className="absolute z-0 h-0.5 w-full bg-bg-black opacity-50 md:opacity-100">
                                         </span>
                                     </div>
                                 </span>

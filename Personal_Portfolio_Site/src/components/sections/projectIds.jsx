@@ -15,12 +15,12 @@ export const projectIds = [
         ghLink: 'https://github.com/pawelGrzesiewicz/Place_for_family',
         webLink: 'https://placeforfamily.netlify.app',
         tools: [
-            <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
-            <FaReact key="react" className="w-6 h-6 m-2"/>,
-            <FaSass key="sass" className="w-6 h-6 m-2"/>,
-            <TbApi key="api" className="w-6 h-6 m-2"/>,
-            <RiSupabaseFill key="supabase" className="w-6 h-6 m-2"/>,
-            <SiNetlify key="netlify" className="w-6 h-6 m-2"/>,
+            <IoLogoJavascript key="javascript" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <FaReact key="react" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <FaSass key="sass" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <TbApi key="api" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <RiSupabaseFill key="supabase" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <SiNetlify key="netlify" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
         ],
         description: `The Entertainment Finder is a dynamic web application built with React, offering users a personalized and interactive experience based on their family's preferences and local weather conditions. The application provides a seamless navigation experience using React Router, allowing users to explore different views such as Home, Sign Up, Sign In, Search Engine, and Add Option. The core functionality revolves around dynamically fetching and displaying entertainment options categorized into "Active," "Learn," and "Chill.`
     },
@@ -31,10 +31,10 @@ export const projectIds = [
         ghLink: 'https://github.com/pawelGrzesiewicz/todo_mvc',
         webLink: 'https://to-dos-mvc.netlify.app',
         tools: [
-            <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
-            <FaReact key="react" className="w-6 h-6 m-2"/>,
-            <TbBrandCss3 key="css" className="w-6 h-6 m-2"/>,
-            <SiNetlify key="netlify" className="w-6 h-6 m-2"/>
+            <IoLogoJavascript key="javascript" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <FaReact key="react" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <TbBrandCss3 key="css" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <SiNetlify key="netlify" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>
         ],
         description: 'The project is a React-based to-do list application that allows users to efficiently manage their tasks. ' +
             'With features like adding new tasks, toggling between "in progress" and "done" statuses, and filtering tasks based on their status, ' +
@@ -49,9 +49,9 @@ export const projectIds = [
         ghLink: 'https://github.com/pawelGrzesiewicz/Best_Shop_RWD',
         webLink: 'https://best-shop-rwd.netlify.app/',
         tools: [
-            <IoLogoJavascript key="javascript" className="w-6 h-6 m-2"/>,
-            <FaSass key="sass" className="w-6 h-6 m-2"/>,
-            <SiNetlify key="netlify" className="w-6 h-6 m-2"/>
+            <IoLogoJavascript key="javascript" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <FaSass key="sass" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <SiNetlify key="netlify" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>
         ],
         description: '',
     },

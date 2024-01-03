@@ -44,12 +44,12 @@ export default function Projects() {
             id="projects"
             className='h-full w-full flex flex-col justify-end md:justify-center'
         >
-            <h1 className='select-none text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>Latest
-                projects</h1>
+            <h1 className='select-none text-white leading-normal md:leading-snug xl:leading-snug font-extrabold text-4xl md:text-6xl xl:text-8xl'>
+                Latest projects
+            </h1>
             <div className='flex'>
                 <div
                     className='bg-white w-6 h-1.5 md:w-8 md:h-2 xl:w-12 xl:h-3 ml-0.5 xl:ml-2 mt-4 md:mt-6 xl:mt-10 mb-2'>
-
                 </div>
 
                 <span
@@ -83,7 +83,7 @@ export default function Projects() {
                     {projectIds.map((project) => (
                         <SwiperSlide key={project.id} className="swiper-slide">
                             <div
-                                className="mt-12 mb-2 relative w-full border border-yellow-3 rounded">
+                                className="mt-12 relative w-full border border-yellow-3 rounded">
                                 <span className="w-full flex justify-between items-center absolute -top-4 mx-auto px-4">
                                     <div className='relative flex items-center justify-start'>
                                         <p className=' z-10 mx-1 -full text-yellow-3'>
@@ -105,7 +105,7 @@ export default function Projects() {
                                             </a>
                                         </div>
                                         <span
-                                                className="absolute z-0 h-0.5 w-full bg-bg-black opacity-50 md:opacity-100">
+                                            className="absolute z-0 h-0.5 w-full bg-bg-black opacity-50 md:opacity-100">
                                         </span>
                                     </div>
                                 </span>
@@ -118,7 +118,7 @@ export default function Projects() {
 
                                 <div className="flex text-white">
                                     {project.tools.map((tool, index) => (
-                                        <span key={index} className="items-center mx-2">
+                                        <span key={index} className="mx-2">
                                             {tool}
                                             </span>
                                     ))}

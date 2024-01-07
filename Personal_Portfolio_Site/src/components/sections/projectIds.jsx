@@ -5,6 +5,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiNetlify } from "react-icons/si";
 import { TbBrandCss3 } from "react-icons/tb";
 import { TbApi } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
 
 
 export const projectIds = [
@@ -51,6 +52,19 @@ export const projectIds = [
         tools: [
             <IoLogoJavascript key="javascript" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
             <FaSass key="sass" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <SiNetlify key="netlify" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>
+        ],
+        description: '',
+    },
+    {
+        id: 4,
+        name: 'HooBank',
+        img: '/hoo_des.png',
+        ghLink: 'https://github.com/pawelGrzesiewicz/bank_modern_app',
+        webLink: 'https://modernbankappstyles.netlify.app/',
+        tools: [
+            <IoLogoJavascript key="javascript" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <SiTailwindcss key="tailwind" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
             <SiNetlify key="netlify" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>
         ],
         description: '',

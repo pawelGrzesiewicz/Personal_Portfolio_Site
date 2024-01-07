@@ -64,6 +64,7 @@ export const projectIds = [
         webLink: 'https://modernbankappstyles.netlify.app/',
         tools: [
             <IoLogoJavascript key="javascript" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
+            <FaReact key="react" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
             <SiTailwindcss key="tailwind" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>,
             <SiNetlify key="netlify" className="w-4 xl:w-6 h-4 xl:h-6 m-2"/>
         ],
